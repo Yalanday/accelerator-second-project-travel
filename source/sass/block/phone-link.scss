@@ -1,0 +1,16 @@
+.phone-link {
+  @include link-style;
+  font-size: $font-small;
+  font-weight: 600;
+  line-height: $font-small;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-medium;
+    line-height: $font-medium;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
