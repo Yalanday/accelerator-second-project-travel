@@ -1,3 +1,4 @@
+const WIDTH = 1440;
 const burgerButton = document.querySelector('.burger-button');
 const nav = document.querySelector('.header__nav');
 const navLinks = nav.querySelectorAll('.nav__link');
@@ -8,12 +9,19 @@ burgerButton.addEventListener('click', () => {
   toggleFixedBody();
 });
 
-navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
+const getWidthWindow = () => {
+  if (document.documentElement.clientWidth < WIDTH) {
     burgerButton.classList.toggle('active');
     nav.classList.toggle('active');
     toggleFixedBody();
+  }
+};
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    getWidthWindow();
   });
+
 });
 
 function toggleFixedBody() {

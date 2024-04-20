@@ -1,0 +1,30 @@
+.details__item {
+  margin: 0;
+  padding: 14px 20px;
+  color: $default-white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.details__item-span {
+  display: flex;
+  align-items: center;
+  gap: 8.5px;
+}
+
+.details__item-span::before {
+  content: '';
+  width: 11px;
+  height: 11px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.details__item-span--moon::before {
+  background-image: url('../../img/moon.svg');
+}
+
+.details__item-span--level::before {
+  background-image: url('../../img/level.svg');
+}
