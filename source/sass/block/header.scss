@@ -1,0 +1,50 @@
+.header {
+  background-color: $navy-blue;
+  position: relative;
+}
+
+.header__container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: grid;
+  grid-template-areas:
+  "burger logo"
+  "phone phone"
+  "nav nav";
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+  "burger logo phone"
+  "nav nav nav";
+  align-items: center;
+  }
+}
+
+.header__toggle {
+  grid-area: burger;
+}
+
+.header__logo {
+  grid-area: logo;
+  fill: $default-white;
+  margin-bottom: 14px;
+}
+
+.header__nav {
+  grid-area: nav;
+  display: none;
+}
+
+.header__nav.active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left:0;
+  width: 100%;
+}
+
+.header__link {
+  grid-area: phone;
+  justify-self: flex-end;
+}
