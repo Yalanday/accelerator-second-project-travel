@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  font-size: $font-medium;
+  line-height: $font-medium;
+  font-weight: 500;
+  background-color: $navy-blue;
+  padding: 20px;
+  color: $default-white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  &--location {
+    padding: 8px;
+    cursor: auto;
+  }
+}

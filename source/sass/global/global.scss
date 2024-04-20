@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  position: relative;
+  font-family: $font-page;
+  color: $elephant;
+  font-weight: 400;
+  font-size: $font-mini;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-small;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-medium;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+@media (width > $desktop-width) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  height: auto;
+  object-fit: cover;
+  vertical-align: top;
+}

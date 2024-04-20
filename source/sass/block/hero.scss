@@ -1,0 +1,5 @@
+.hero__link {
+  @include link-style;
+  display: inline-block;
+  color: $default-white;
+}
