@@ -8,39 +8,70 @@
   padding-bottom: 15px;
   display: grid;
   grid-template-areas:
-  "burger logo"
-  "phone phone"
-  "nav nav";
+    "burger logo"
+    "phone phone"
+    "nav nav";
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
     grid-template-areas:
-  "burger logo phone"
-  "nav nav nav";
-  align-items: center;
+      "burger logo phone"
+      "nav nav nav";
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    grid-template-areas:
+      "logo nav phone";
+    align-items: center;
   }
 }
 
 .header__toggle {
   grid-area: burger;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .header__logo {
   grid-area: logo;
   fill: $default-white;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-left: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-left: 32px;
+  }
 }
 
 .header__nav {
   grid-area: nav;
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: static;
+  }
+
 }
 
 .header__nav.active {
   display: block;
   position: absolute;
+  z-index: 10;
   top: 100%;
-  left:0;
+  left: 0;
   width: 100%;
 }
 
