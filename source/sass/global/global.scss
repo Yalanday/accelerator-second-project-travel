@@ -5,8 +5,8 @@
 }
 
 body {
-  margin: 0 auto;
-  position: relative;
+  // margin: 0 auto;
+  // position: relative;
   font-family: $font-page;
   color: $elephant;
   font-weight: 400;
@@ -23,6 +23,10 @@ body {
   @media (min-width: $desktop-width) {
     font-size: $font-medium;
   }
+}
+
+body.header__nav.active {
+  position: fixed;
 }
 
 body::-webkit-scrollbar {

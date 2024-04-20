@@ -17,24 +17,29 @@
   <!-- пример использования спрайта -->
   <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg> -->
-  <!-- <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
+
   <header class="header" data-test="header">
     <div class="header__container container">
-      <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
-      <img class="header__logo logo" width="142" height="42" src="/__spritemap#sprite-logo-view" alt="Логотип">
+
+      <button class="header__toggle burger-button" type="button " aria-label="Открыть меню">
+        <span></span>
+      </button>
+
+      <svg class="header__logo logo" width="142" height="42">
+        <use href="/__spritemap#sprite-logo"></use>
+      </svg>
+
       <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#">Туры</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Обучение</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Фотографии</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+        <ul class="nav__list container">
+          <li class="nav__item"><a class="nav__link" href="#tours">Туры</a></li>
+          <li class="nav__item"><a class="nav__link" href="#training">Обучение</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+          <li class="nav__item"><a class="nav__link" href="#reviews">Отзывы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#gallery">Фотографии</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
-      <a class="header__link phone-link" href="tel:+78000000000">8 800 000-00-00</a>
+      <a class="header__link phone-link phone-link--white" href="tel:+78000000000">8 800 000-00-00</a>
     </div>
   </header>
 
@@ -89,7 +94,7 @@
 
   </section>
 
-  <section class="tours" data-test="tours">
+  <section class="tours" id="tours" data-test="tours">
     <div class="tours__container container">
       <h2 class="tours__title title">Ближайшие туры</h2>
       <div class="tours__swiper swiper">
@@ -285,7 +290,7 @@
     </div>
   </section>
 
-  <section class="training" data-test="training">
+  <section class="training" id="training" data-test="training">
     <div class="training__container container">
       <h2 class="training__title title">Обучение</h2>
       <p class="training__description">Обучение проводится квалифицированными специалистами, за плечами которых десятки
@@ -368,8 +373,7 @@
     </div>
   </section>
 
-
-  <section class="about" data-test="about">
+  <section class="about" id="about" data-test="about">
     <div class="about__container container">
       <picture class="about__picture"></picture>
       <div class="about__content">
@@ -400,7 +404,7 @@
     </div>
   </section>
 
-  <section class="reviews" data-test="reviews">
+  <section class="reviews" id="reviews" data-test="reviews">
     <div class="reviews__container container">
       <h2 class="reviews__title title">Отзывы</h2>
 
@@ -535,7 +539,7 @@
     </div>
   </section>
 
-  <section class="gallery" data-test="gallery">
+  <section class="gallery" id="gallery" data-test="gallery">
     <div class="gallery__container container">
       <h2 class="gallery__title title">Фотогалерея</h2>
       <p class="gallery__description">Добавляйте фото в с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие
@@ -579,7 +583,7 @@
   <div class="page-footer" data-test="footer">
     <div class="page-footer__container container">
 
-      <section class="page-footer__contacts contacts">
+      <section class="page-footer__contacts contacts" id="contacts">
         <h2 class="contacts__title title">Контакты</h2>
         <p class="contacts__description"></p>
         <ul class="contacts__list">

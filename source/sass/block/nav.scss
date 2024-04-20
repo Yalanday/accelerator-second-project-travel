@@ -1,0 +1,24 @@
+.nav {
+  background-color: $navy-blue;
+}
+
+.nav__list {
+@include list-reset;
+display: flex;
+flex-direction: column;
+gap: 26px;
+margin: 0 auto;
+padding: 15px 15px 50px;
+
+@media (min-width: $tablet-width) {
+  padding: 35px 45px 70px;
+}
+}
+
+.nav__link {
+  @include link-style;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $default-white;
+}
