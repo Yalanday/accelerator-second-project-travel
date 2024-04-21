@@ -5,5 +5,5 @@
 import './nav';
 import './hero-swiper';
 import './tours-swiper';
-
+import './instructors-swiper';
 

@@ -1,14 +1,17 @@
 .tours__container {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 117px;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
+    padding-bottom: 40px;
+
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
@@ -24,51 +27,13 @@
     position: absolute;
     top: 60px;
     right: 35px;
-    display: flex;
-    gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
     top: 120px;
     right: 110px;
-    display: flex;
-    gap: 25px;
   }
 }
-
-.tours__swiper-buttons .swiper-button-next,
-.tours__swiper-buttons .swiper-button-prev {
-  @media (min-width: $tablet-width) {
-    position: relative;
-    width: 37px;
-    height: 35px;
-    background-color: $navy-blue;
-    margin: 0;
-  }
-}
-
-.tours__swiper-buttons .swiper-button-prev {
-  transform: rotate(180deg);
-}
-
-.tours__swiper-buttons .swiper-button-next.swiper-button-disabled,
-.tours__swiper-buttons .swiper-button-prev.swiper-button-disabled {
-  background-color: #999999;
-}
-
-.tours__swiper-buttons .swiper-button-next::after,
-.tours__swiper-buttons .swiper-button-prev::after {
-  @media (min-width: $tablet-width) {
-    content: '';
-    width: 15px;
-    height: 10px;
-    background-image: url('../../img/arrow.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
-
 
 .tours__img {
   width: 100%;
@@ -177,10 +142,10 @@
 }
 
 .tours__link::after {
-content: '';
-width: 10px;
-height: 10px;
-border-right: 2px solid $default-black;
-border-bottom: 2px solid $default-black;
-transform: rotate(-45deg);
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid $default-black;
+  border-bottom: 2px solid $default-black;
+  transform: rotate(-45deg);
 }
