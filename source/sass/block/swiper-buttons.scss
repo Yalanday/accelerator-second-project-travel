@@ -1,0 +1,44 @@
+.swiper-buttons {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 25px;
+  }
+}
+
+.swiper-buttons .swiper-button-next,
+.swiper-buttons .swiper-button-prev {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 37px;
+    height: 35px;
+    background-color: $navy-blue;
+    margin: 0;
+  }
+}
+
+.swiper-buttons .swiper-button-prev {
+  transform: rotate(180deg);
+}
+
+.swiper-buttons .swiper-button-next.swiper-button-disabled,
+.swiper-buttons .swiper-button-prev.swiper-button-disabled {
+  background-color: #999999;
+}
+
+.swiper-buttons .swiper-button-next::after,
+.swiper-buttons .swiper-button-prev::after {
+  @media (min-width: $tablet-width) {
+    content: '';
+    width: 15px;
+    height: 10px;
+    background-image: url('../../img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
