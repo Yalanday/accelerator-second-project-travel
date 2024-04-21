@@ -1,7 +1,30 @@
 .title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  margin-bottom: -10px;
+  opacity: 0.03;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: -20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+    margin-bottom: -35px;
+  }
+}
+
+.title-shadow {
+  display: inline-block;
   font-size: 22px;
   line-height: 22px;
   font-weight: 800;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 25px;
@@ -19,6 +42,7 @@
   font-size: $font-medium;
   line-height: $font-medium;
   font-weight: 700;
+  opacity: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

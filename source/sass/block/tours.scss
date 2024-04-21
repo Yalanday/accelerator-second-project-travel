@@ -1,0 +1,186 @@
+.tours__container {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
+}
+
+.tours__swiper {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.tours__swiper-buttons {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 60px;
+    right: 35px;
+    display: flex;
+    gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 120px;
+    right: 110px;
+    display: flex;
+    gap: 25px;
+  }
+}
+
+.tours__swiper-buttons .swiper-button-next,
+.tours__swiper-buttons .swiper-button-prev {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 37px;
+    height: 35px;
+    background-color: $navy-blue;
+    margin: 0;
+  }
+}
+
+.tours__swiper-buttons .swiper-button-prev {
+  transform: rotate(180deg);
+}
+
+.tours__swiper-buttons .swiper-button-next.swiper-button-disabled,
+.tours__swiper-buttons .swiper-button-prev.swiper-button-disabled {
+  background-color: #999999;
+}
+
+.tours__swiper-buttons .swiper-button-next::after,
+.tours__swiper-buttons .swiper-button-prev::after {
+  @media (min-width: $tablet-width) {
+    content: '';
+    width: 15px;
+    height: 10px;
+    background-image: url('../../img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+
+.tours__img {
+  width: 100%;
+}
+
+.tours__card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tours__card-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: $default-white;
+  order: 1;
+}
+
+.tours__card-details-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  order: 0;
+}
+
+.tours__card-location {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  margin-right: 5px;
+}
+
+.tours__card-location-span {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.tours__card-location-span::before {
+  content: '';
+  width: 14px;
+  height: 12px;
+  background-image: url('../../img/pin.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.tours__details,
+.tours__features-list,
+.tours__features-sublist {
+  @include list-reset;
+}
+
+.tours__details {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tours__features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  order: 2;
+}
+
+.tours__features-item {
+  color: $default-white;
+}
+
+.tours__features-title {
+  font-weight: 300;
+  margin-bottom: 7px;
+}
+
+.tours__features-description {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.tours__link-wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.tours__link {
+  @include link-style;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.4px;
+}
+
+.tours__link::after {
+content: '';
+width: 10px;
+height: 10px;
+border-right: 2px solid $default-black;
+border-bottom: 2px solid $default-black;
+transform: rotate(-45deg);
+}

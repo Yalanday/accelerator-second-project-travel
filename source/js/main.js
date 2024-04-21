@@ -4,4 +4,6 @@
 // import 'swiper/css';
 import './nav';
 import './hero-swiper';
+import './tours-swiper';
+
 
