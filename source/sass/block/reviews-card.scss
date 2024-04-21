@@ -1,7 +1,7 @@
 .reviews-card {
   padding: 20px;
   border: 1px solid rgb(255, 255, 255);
-  box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.1);
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
   background: rgb(255, 255, 255);
   min-height: 484px;
 
@@ -72,7 +72,6 @@
     font-size: 14px;
     line-height: 22px;
   }
-
 }
 
 .reviews-card p:nth-of-type(2) {

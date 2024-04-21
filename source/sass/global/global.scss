@@ -25,11 +25,11 @@ body {
   }
 }
 
-body.header__nav.active {
+.page-body.header__nav.active {
   position: fixed;
 }
 
-body::-webkit-scrollbar {
+.page-body::-webkit-scrollbar {
   width: 0;
 }
 

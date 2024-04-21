@@ -31,37 +31,37 @@
 }
 
 .adv-card__title::before {
-  content: '';
+  content: "";
   width: 42px;
   height: 42px;
   border: 1px solid $navy-blue;
   background-repeat: no-repeat;
   background-position: center;
 
-@media (min-width: $tablet-width) {
-  width: 48px;
-  height: 48px;
-}
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .adv-card__title--security::before {
-  background-image: url('../../img/securily.svg');
+  background-image: url("../../img/securily.svg");
 }
 
 .adv-card__title--expertize::before {
-  background-image: url('../../img/expertize.svg');
+  background-image: url("../../img/expertize.svg");
 }
 
 .adv-card__title--equipment::before {
-  background-image: url('../../img/equipment.svg');
+  background-image: url("../../img/equipment.svg");
 }
 
 .adv-card__title--individual::before {
-  background-image: url('../../img/individual.svg');
+  background-image: url("../../img/individual.svg");
 }
 
 .adv-card__title--nature::before {
-  background-image: url('../../img/nature.svg');
+  background-image: url("../../img/nature.svg");
 }
 
 
