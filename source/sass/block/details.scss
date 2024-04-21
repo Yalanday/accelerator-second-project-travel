@@ -7,7 +7,6 @@
   &--tours {
     line-height: 12px;
   }
-
 }
 
 .details__item-span {
@@ -17,7 +16,7 @@
 }
 
 .details__item-span::before {
-  content: '';
+  content: "";
   width: 11px;
   height: 11px;
   background-size: cover;
@@ -30,15 +29,15 @@
 }
 
 .details__item-span--moon::before {
-  background-image: url('../../img/moon.svg');
+  background-image: url("../../img/moon.svg");
 }
 
 .details__item-span--level::before {
-  background-image: url('../../img/level.svg');
+  background-image: url("../../img/level.svg");
 }
 
 .details__item-span--sun::before {
   width: 20px;
   height: 20px;
-  background-image: url('../../img/sun.svg');
+  background-image: url("../../img/sun.svg");
 }

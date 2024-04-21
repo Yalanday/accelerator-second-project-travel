@@ -9,8 +9,8 @@
   display: grid;
   grid-template-areas:
     "burger logo"
-    "phone phone"
-    "nav nav";
+    "phone  phone"
+    "nav    nav";
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
@@ -18,15 +18,14 @@
     padding-bottom: 20px;
     grid-template-areas:
       "burger logo phone"
-      "nav nav nav";
+      "nav    nav  nav";
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 42px;
     padding-bottom: 42px;
-    grid-template-areas:
-      "logo nav phone";
+    grid-template-areas: "logo nav phone";
     align-items: center;
   }
 }
@@ -63,7 +62,6 @@
     display: block;
     position: static;
   }
-
 }
 
 .header__nav.active {

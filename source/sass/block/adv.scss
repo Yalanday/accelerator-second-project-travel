@@ -31,7 +31,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,11 +44,11 @@
 
 
 .adv__swiper-buttons.swiper-buttons {
-display: none;
+  display: none;
 
-@media (min-width: $desktop-width) {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-}
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
 }

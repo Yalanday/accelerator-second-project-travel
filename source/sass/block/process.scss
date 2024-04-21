@@ -5,6 +5,7 @@
 
 .process__list {
   @include list-reset;
+
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -26,7 +27,7 @@
 }
 
 .process__list::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   height: 183px;
@@ -41,14 +42,13 @@
 
 .process__list::after {
   @media (min-width: $desktop-width) {
-    content: '';
+    content: "";
     position: absolute;
     width: 20px;
     height: 20px;
     left: 0;
     bottom: -10px;
     background-color: $default-white;
-
   }
 }
 
@@ -58,6 +58,7 @@
 
   @media (min-width: $tablet-width) {
     width: 40%;
+
     &--map {
       order: 1;
     }
@@ -100,7 +101,7 @@
 }
 
 .process__item::before {
-  content: '';
+  content: "";
   flex-shrink: 0;
   margin-right: 15px;
   width: 14px;
@@ -143,7 +144,7 @@
 }
 
 .process__item-text::before {
-  content: '';
+  content: "";
   flex-shrink: 0;
   width: 25px;
   height: 25px;
@@ -152,15 +153,15 @@
 }
 
 .process__item-text--map::before {
-  content: '';
-  background-image: url('../../img/process-1.svg');
+  content: "";
+  background-image: url("../../img/process-1.svg");
 }
 
 .process__item-text--boots::before {
-  content: '';
-    width: 26px;
+  content: "";
+  width: 26px;
 
-  background-image: url('../../img/process-2.svg');
+  background-image: url("../../img/process-2.svg");
 
   @media (min-width: $desktop-width) {
     width: 26px;
@@ -168,11 +169,11 @@
 }
 
 .process__item-text--wald::before {
-  content: '';
-  background-image: url('../../img/process-3.svg');
+  content: "";
+  background-image: url("../../img/process-3.svg");
 }
 
 .process__item-text--mountain::before {
-  content: '';
-  background-image: url('../../img/process-4.svg');
+  content: "";
+  background-image: url("../../img/process-4.svg");
 }
