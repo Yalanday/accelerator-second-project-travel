@@ -1,4 +1,4 @@
-const WIDTH = 1440;
+export const WIDTH_DESKTOP = 1440;
 const burgerButton = document.querySelector('.burger-button');
 const nav = document.querySelector('.header__nav');
 const navLinks = nav.querySelectorAll('.nav__link');
@@ -10,7 +10,7 @@ burgerButton.addEventListener('click', () => {
 });
 
 const getWidthWindow = () => {
-  if (document.documentElement.clientWidth < WIDTH) {
+  if (document.documentElement.clientWidth < WIDTH_DESKTOP) {
     burgerButton.classList.toggle('active');
     nav.classList.toggle('active');
     toggleFixedBody();
