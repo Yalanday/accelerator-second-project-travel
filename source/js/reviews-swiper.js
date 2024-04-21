@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 
 
-export const toursSwiper = new Swiper('.reviews__swiper', {
+export const reviewsSwiper = new Swiper('.reviews__swiper', {
   modules: [Navigation],
   slidesPerView: 1,
   spaceBetween: 10,

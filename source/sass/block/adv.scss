@@ -1,3 +1,54 @@
 .adv__container {
   position: relative;
 }
+
+.adv__title,
+.adv__title-shadow {
+  display: block;
+  text-align: center;
+}
+
+.adv__title-shadow {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 43px;
+  }
+}
+
+.adv__swiper.swiper {
+  @media (min-width: $desktop-width) {
+    overflow: visible;
+  }
+}
+
+.adv__swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0;
+    margin-bottom: 50px;
+  }
+}
+
+
+.adv__swiper-buttons.swiper-buttons {
+display: none;
+
+@media (min-width: $desktop-width) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+}
