@@ -1,3 +1,44 @@
+// .reviews {
+// }
+
 .reviews__container {
   position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.reviews__title-shadow {
+  margin: 0 0 17px;
+}
+
+.reviews__swiper.swiper {
+  @media (min-width: $tablet-width) {
+    overflow: visible;
+  }
+}
+
+.reviews__swiper-buttons {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 126px;
+    right: 115px;
+  }
 }
