@@ -1054,40 +1054,78 @@
 
 
   <div class="page-footer" data-test="footer">
-    <div class="page-footer__container container">
+    <div class="page-footer__container">
 
       <section class="page-footer__contacts contacts" id="contacts">
-        <h2 class="contacts__title title">Контакты</h2>
-        <p class="contacts__description"></p>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <span class="contacts__item-title">Телефон</span>
-            <a class="contacts__link" href="tel:+79837454545">+7 983 745-45-45</a>
-          </li>
-          <li class="contacts__item">
-            <span class="contacts__item-title">Email</span>
-            <a class="contacts__item-link" href="mailto:info@lifetour.com">info@lifetour.com</a>
-          </li>
-          <li class="contacts__item">
-            <span class="contacts__item-title">Адрес</span>
-            <p class="contacts__item-link">г. Москва, пр-т Мира, д. 14, офис 101</p>
-          </li>
-        </ul>
+        <div class="contacts__text-content container">
+          <h2 class="contacts__title title">Контакты</h2>
+          <span class="contacts__title-shadow title-shadow" aria-hidden="true">Контакты</span>
+          <p class="contacts__description">Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости.
+            Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--phone">
+              <div class="contacts__item-wrapper">
+                <span class="contacts__item-title">Телефон</span>
+                <a class="contacts__item-link" href="tel:+79837454545">+7 983 745-45-45</a>
+              </div>
+            </li>
+            <li class="contacts__item contacts__item--mail">
+              <div class="contacts__item-wrapper">
+                <span class="contacts__item-title">Email</span>
+                <a class="contacts__item-link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </div>
+            </li>
+            <li class="contacts__item contacts__item--pin">
+              <div class="contacts__item-wrapper">
+                <span class="contacts__item-title">Адрес</span>
+                <p class="contacts__item-link contacts__item-link--no-link">г. Москва, пр-т Мира, д. 14,офис 101</p>
+              </div>
+            </li>
+          </ul>
+        </div>
 
+        <div class="contacts__map">
+          <picture class="contacts__picture">
+            <source type="image/webp" media="(min-width: 1440px)" width="595" height="324"
+              srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" width="595" height="324"
+              srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" width="320" height="343"
+              srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1440px)" width="595" height="324"
+              srcset="img/map-desktop@1x.jpeg, img/map-desktop@2x.jpeg 2x">
+            <source type="image/webp" media="(min-width: 768px)" width="768" height="340"
+              srcset="img/map-tablet@1x.jpeg, img/map-tablet@2x.jpeg 2x">
+            <img class="contacts__image" width="320" height="343" src="img/map-mobile@1x.jpeg"
+              srcset="img/map-mobile@2x.jpeg 2x" alt="Подпись к картинке.">
+          </picture>
+        </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer container">
         <div class="footer__top">
           <img class="footer__logo logo" width="142" height="42" src="/__spritemap#sprite-logo-view" alt="Логотип">
 
-          <nav class="footer__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#">Туры</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Обучение</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Фотографии</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+          <nav class="footer__nav nav nav--footer">
+            <ul class="nav__list nav__list--footer">
+              <li class="nav__item nav__item--footer">
+                <a class="nav__link nav__link--footer" href="#">Туры</a>
+              </li>
+              <li class="nav__item nav__item--footer">
+                <a class="nav__link nav__link--footer" href="#">Обучение</a>
+              </li>
+              <li class="nav__item nav__item--footer">
+                <a class="nav__link nav__link--footer" href="#">О нас</a>
+              </li>
+              <li class="nav__item nav__item--footer">
+                <a class="nav__link nav__link--footer" href="#">Отзывы</a>
+              </li>
+              <li class="nav__item nav__item--footer">
+                <a class="nav__link nav__link--footer" href="#">Фотографии</a>
+              </li>
+              <li class="nav__item nav__item--footer">
+                <a class="nav__link nav__link--footer" href="#">Контакты</a>
+              </li>
             </ul>
           </nav>
           <a class="footer__link phone-link" href="tel:+78000000000">8 800 000-00-00</a>
@@ -1098,26 +1136,26 @@
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Вконтакте" rel="noreferrer noopener"
                 target="_blank">
-                <!-- <svg class="social-list__icon" width="14" height="14">
+                <svg class="social-list__icon" width="17" height="9">
                 <use href="/__spritemap#sprite-vk"></use>
-              </svg> -->
+              </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://ok.ru/htmlacademy" aria-label="Одноклассники"
                 rel="noreferrer noopener" target="_blank">
-                <!-- <svg class="social-list__icon" width="9" height="16">
+                <svg class="social-list__icon" width="10" height="16">
                 <use href="/__spritemap#sprite-ok"></use>
-              </svg> -->
+              </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link"
                 href="https://www.reddit.com/r/ProgrammerHumor/comments/grreuq/i_code_in_html_and_css/"
                 aria-label="Reddit" rel="noreferrer noopener" target="_blank">
-                <!-- <svg class="social-list__icon" width="14" height="14">
+                <svg class="social-list__icon" width="15" height="15">
                 <use href="/__spritemap#sprite-reddit"></use>
-              </svg> -->
+              </svg>
               </a>
             </li>
           </ul>
