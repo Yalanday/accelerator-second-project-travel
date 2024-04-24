@@ -1,0 +1,19 @@
+.social__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0 auto;
+  justify-content: center
+}
+
+.social__link {
+  @include link-style;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 30px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+}

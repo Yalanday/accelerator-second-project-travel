@@ -1,5 +1,10 @@
 .nav {
   background-color: $navy-blue;
+
+  &--footer {
+    background-color: $default-white;
+    width: 100%;
+  }
 }
 
 .nav__list {
@@ -27,6 +32,48 @@
   }
 }
 
+.nav__list--footer {
+  display: block;
+  gap: 0;
+  width: 100%;
+  padding: 0;
+  -moz-column-count: 2;
+  column-count: 2;
+  column-width: 120px;
+  column-gap: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 10px;
+    column-gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    column-gap: 30px;
+  }
+}
+
+
+.nav__item--footer {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding-right: 10px;
+    ;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .nav__link {
   @include link-style;
 
@@ -34,6 +81,14 @@
   text-transform: uppercase;
   font-weight: 700;
   color: $default-white;
+
+  &--footer {
+    color: $elephant;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: none;
+  }
 
   @media (min-width: $desktop-width) {
     text-transform: none;
