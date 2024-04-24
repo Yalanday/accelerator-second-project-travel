@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 
 
-export const toursSwiper = new Swiper('.instructors__swiper', {
+export const instructorsSwiper = new Swiper('.instructors__swiper', {
   modules: [Navigation],
   slidesPerView: 1,
   spaceBetween: 10,

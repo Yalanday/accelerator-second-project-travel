@@ -1,7 +1,8 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Manipulation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/bundle';
+import 'swiper/css/manipulation';
 import { WIDTH_DESKTOP } from './nav';
 
 const advSection = document.querySelector('.adv');
@@ -38,7 +39,7 @@ function startSwiper() {
     advSlides.forEach((slide) => slide.classList.add('swiper-slide'));
     // eslint-disable-next-line no-unused-vars
     const advSwiper = new Swiper('.adv__swiper', {
-      modules: [Navigation],
+      modules: [Navigation, Manipulation],
       breakpoints: {
         320: {
           enabled: false,
@@ -54,9 +55,12 @@ function startSwiper() {
         1440: {
           direction: 'horizontal',
           enabled: true,
+          loop: true,
+          loopAddBlankSlides: false,
           slidesPerView: 3,
-          initialSlide: 1,
-          spaceBetween: 30
+          initialSlide: 3,
+          slidesPerGroup: 2,
+          spaceBetween: 30,
         }
       },
       navigation: {
@@ -64,7 +68,23 @@ function startSwiper() {
         prevEl: '.adv__swiper-button-prev',
       },
     });
+
+    const appendSlides = () => {
+      const originalSlides = advSwiper.slides;
+      const nextBtn = document.querySelector('.adv__swiper-button-next');
+      originalSlides.forEach((slide) => {
+        advSwiper.appendSlide(slide.outerHTML);
+        advSwiper.updateSlides();
+        advSwiper.updateSlidesClasses();
+      });
+      const noSlides = document.querySelectorAll('.swiper-slide-blank');
+      noSlides.forEach((slide) => {
+        slide.style.width = 0;
+      });
+      nextBtn.click();
+    };
+
+    appendSlides();
   }
 }
-
 
