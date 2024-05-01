@@ -11,7 +11,8 @@ export const instructorsSwiper = new Swiper('.instructors__swiper', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 0
+      spaceBetween: 0,
+      initialSlide: 2,
     },
     768: {
       slidesPerView: 3,
@@ -19,12 +20,11 @@ export const instructorsSwiper = new Swiper('.instructors__swiper', {
     },
     1440: {
       slidesPerView: 4,
-      spaceBetween: 30
+      spaceBetween: 20
     }
   },
   navigation: {
     nextEl: '.instructors__swiper-button-next',
     prevEl: '.instructors__swiper-button-prev',
   },
-
 });

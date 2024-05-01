@@ -5,6 +5,7 @@
 import './nav';
 import './hero-swiper';
 import './tours-swiper';
+import './tours-stars';
 import './instructors-swiper';
 import './reviews-swiper';
 import './adv-swiper';

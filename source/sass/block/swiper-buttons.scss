@@ -1,7 +1,7 @@
 .swiper-buttons {
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 25px;
+    gap: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,7 +27,8 @@
 
 .swiper-buttons .swiper-button-next.swiper-button-disabled,
 .swiper-buttons .swiper-button-prev.swiper-button-disabled {
-  background-color: #999999;
+  background-color: #dbdbdb;
+  opacity: 1;
 }
 
 .swiper-buttons .swiper-button-next::after,

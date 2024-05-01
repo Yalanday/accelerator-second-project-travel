@@ -1,6 +1,15 @@
 .process__title-shadow {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -11px;
+
+  }
 }
 
 .process__list {
@@ -20,7 +29,6 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $navy-blue;
-    padding-bottom: 6px;
     justify-content: flex-start;
     gap: 0;
   }
@@ -79,7 +87,7 @@
   @media (min-width: $desktop-width) {
     align-items: flex-start;
     position: relative;
-    padding: 10px;
+    padding: 10px 13px 8px 10px;
     width: auto;
 
     &--map {
@@ -117,9 +125,13 @@
   @media (min-width: $desktop-width) {
     display: block;
     position: absolute;
-    bottom: -13px;
-    left: 15px;
+    bottom: -7px;
+    left: 20px;
   }
+}
+
+.process__item--wald::before {
+  left: 0;
 }
 
 .process__item-text {
@@ -132,8 +144,9 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    font-size: $font-small;
     line-height: 22px;
-    width: 220px;
+    width: 235px;
   }
 
   @media (min-width: $desktop-width) {

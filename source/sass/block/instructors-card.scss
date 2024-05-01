@@ -8,6 +8,8 @@
 
   @media (min-width: $tablet-width) {
     min-height: 388px;
+    padding: 15px 14px 14px;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -18,13 +20,21 @@
 .instructors-card__img {
   width: 100%;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .instructors-card__links {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14.5px;
+
+  }
 }
 
 .instructors-card__title {
@@ -33,6 +43,10 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
+
+  @media (min-width: $desktop-width) {
+    width: 55%;
+  }
 }
 
 .instructors-card__social-link {
@@ -52,4 +66,13 @@
   margin: 0;
   font-size: $font-mini;
   line-height: 16px;
+  width: 241px;
+
+  @media (min-width: $tablet-width) {
+    width: 183px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
