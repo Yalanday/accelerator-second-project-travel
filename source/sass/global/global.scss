@@ -18,10 +18,17 @@ body {
 
   @media (min-width: $tablet-width) {
     font-size: $font-small;
+
+    background-image: url('../../img/clouds-2@1x.png');
+    background-repeat: no-repeat;
+    background-position: 205% 18.5%;
+    background-size: 602px 1630px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: $font-medium;
+    background-image: url('../../img/clouds-2@1x.png');
+    background-position: 100% 15.5%;
   }
 }
 

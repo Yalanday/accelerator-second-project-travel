@@ -1,7 +1,17 @@
+.tours {
+  background-image: url('../../img/clouds@1x.png');
+  background-repeat: no-repeat;
+  background-position: -700% 10%;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+}
+
 .tours__container {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 117px;
+  padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
@@ -17,6 +27,10 @@
 .tours__swiper {
   margin-top: 25px;
   margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .tours__swiper-buttons {
@@ -40,21 +54,33 @@
 
 .tours__card-content {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 17px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 11px
+  }
 }
 
 .tours__card-title {
-  margin: 0;
+  margin: -11px 0 11px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   color: $default-white;
   order: 1;
+
+  @media (min-width: $tablet-width) {
+    margin: -13px 0 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
+  }
 }
 
 .tours__card-details-wrapper {
@@ -73,7 +99,7 @@
 
 .tours__card-location-span {
   display: flex;
-  gap: 9px;
+  gap: 4px;
   align-items: center;
 }
 
@@ -96,6 +122,10 @@
   display: inline-flex;
   align-items: center;
   gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .tours__features-list {
@@ -112,12 +142,23 @@
 .tours__features-title {
   font-weight: 300;
   margin-bottom: 7px;
+  font-size: $font-mini;
+  line-height: $font-mini;
 }
 
 .tours__features-description {
   font-size: 13px;
   font-weight: 700;
   line-height: 13px;
+
+  &--stars {
+    display: flex;
+    gap: 1.8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+  }
 }
 
 .tours__link-wrapper {
@@ -137,6 +178,11 @@
   font-weight: 700;
   line-height: 14px;
   letter-spacing: 0.4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .tours__link::after {
@@ -146,4 +192,9 @@
   border-right: 2px solid $default-black;
   border-bottom: 2px solid $default-black;
   transform: rotate(-45deg);
+}
+
+.tours__star {
+  fill: none;
+  stroke: $default-white;
 }

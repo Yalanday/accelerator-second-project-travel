@@ -3,7 +3,7 @@
   font-size: 26px;
   font-weight: 800;
   line-height: 26px;
-  margin-bottom: -10px;
+  margin-bottom: -8px;
   opacity: 0.03;
 
   @media (min-width: $tablet-width) {
@@ -28,16 +28,19 @@
   font-size: 22px;
   line-height: 22px;
   font-weight: 800;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 25px;
     line-height: 25px;
+    padding-bottom: 10px;
+
   }
 
   @media (min-width: $desktop-width) {
     font-size: 35px;
     line-height: 35px;
+    padding-bottom: 28px;
   }
 }
 
