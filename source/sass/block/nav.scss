@@ -1,6 +1,7 @@
 .nav {
   background-color: $navy-blue;
 
+
   &--footer {
     background-color: $default-white;
     width: 100%;
@@ -24,11 +25,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    width: 100%;
+    max-width: 580px;
     padding: 0;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 

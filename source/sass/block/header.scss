@@ -1,11 +1,12 @@
 .header {
+  display: none;
   background-color: $navy-blue;
   position: relative;
 }
 
 .header__container {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 13.5px;
   display: grid;
   grid-template-areas:
     "burger logo"
@@ -31,7 +32,12 @@
 }
 
 .header__toggle {
+  margin-top: 2px;
   grid-area: burger;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -45,7 +51,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    margin-left: 110px;
+    margin-left: 113.5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,6 +67,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     position: static;
+    padding-left: 30px;
   }
 }
 
@@ -74,6 +81,7 @@
 }
 
 .header__link {
+  margin-top: 2px;
   grid-area: phone;
   justify-self: flex-end;
 }
